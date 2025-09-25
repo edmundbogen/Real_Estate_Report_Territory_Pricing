@@ -6,27 +6,27 @@ const UpdatedLuxuryCommunitiesChart = () => {
   const [sortBy, setSortBy] = useState('community');
 
   const data = [
-    { community: 'St. Andrews', active: 14, sold: 27, total: 41, soldRatio: 65.9 },
-    { community: 'Addison Reserve', active: 9, sold: 22, total: 31, soldRatio: 71.0 },
-    { community: 'The Oaks', active: 13, sold: 28, total: 41, soldRatio: 68.3 },
-    { community: 'Delaire', active: 2, sold: 17, total: 19, soldRatio: 89.5 },
-    { community: 'Le Lac', active: 0, sold: 0, total: 0, soldRatio: 0 },
-    { community: 'Royal Palm Yacht Club', active: 34, sold: 28, total: 62, soldRatio: 45.2 },
-    { community: 'Broken Sound', active: 25, sold: 82, total: 107, soldRatio: 76.6 },
-    { community: 'Long Lake Estates', active: 7, sold: 3, total: 10, soldRatio: 30.0 },
-    { community: 'Mizner Country Club', active: 9, sold: 10, total: 19, soldRatio: 52.6 },
-    { community: 'Polo Club', active: 13, sold: 51, total: 64, soldRatio: 79.7 },
-    { community: 'The Sanctuary', active: 6, sold: 6, total: 12, soldRatio: 50.0 },
-    { community: 'Bocaire Country Club', active: 13, sold: 18, total: 31, soldRatio: 58.1 },
-    { community: 'Lotus', active: 19, sold: 33, total: 52, soldRatio: 63.5 },
-    { community: 'Boca Bridges', active: 9, sold: 25, total: 34, soldRatio: 73.5 },
-    { community: 'Boca West', active: 51, sold: 152, total: 203, soldRatio: 74.9 },
-    { community: 'Boca Grove', active: 7, sold: 13, total: 20, soldRatio: 65.0 },
-    { community: 'Seven Bridges', active: 11, sold: 27, total: 38, soldRatio: 71.1 },
+    { community: 'St. Andrews', active: 15, sold: 27, total: 42, soldRatio: 64.3 },
+    { community: 'Addison Reserve', active: 11, sold: 23, total: 34, soldRatio: 67.6 },
+    { community: 'The Oaks', active: 12, sold: 28, total: 40, soldRatio: 70.0 },
+    { community: 'Delaire', active: 3, sold: 17, total: 20, soldRatio: 85.0 },
     { community: 'The Bridges', active: 10, sold: 18, total: 28, soldRatio: 64.3 },
+    { community: 'Seven Bridges', active: 14, sold: 28, total: 42, soldRatio: 66.7 },
+    { community: 'Boca Grove', active: 7, sold: 13, total: 20, soldRatio: 65.0 },
+    { community: 'Boca West', active: 50, sold: 161, total: 211, soldRatio: 76.3 },
+    { community: 'Boca Bridges', active: 9, sold: 25, total: 34, soldRatio: 73.5 },
+    { community: 'Lotus', active: 18, sold: 33, total: 51, soldRatio: 64.7 },
+    { community: 'Bocaire Country Club', active: 13, sold: 18, total: 31, soldRatio: 58.1 },
+    { community: 'The Sanctuary', active: 8, sold: 6, total: 14, soldRatio: 42.9 },
+    { community: 'Polo Club', active: 14, sold: 54, total: 68, soldRatio: 79.4 },
+    { community: 'Mizner Country Club', active: 8, sold: 10, total: 18, soldRatio: 55.6 },
+    { community: 'Long Lake Estates', active: 7, sold: 3, total: 10, soldRatio: 30.0 },
+    { community: 'Broken Sound', active: 28, sold: 85, total: 113, soldRatio: 75.2 },
+    { community: 'Royal Palm Yacht Club', active: 35, sold: 29, total: 64, soldRatio: 45.3 },
+    { community: 'Le Lac', active: 0, sold: 0, total: 0, soldRatio: 0 },
     { community: 'Seasons', active: 8, sold: 8, total: 16, soldRatio: 50.0 },
-    { community: 'Woodfield', active: 19, sold: 48, total: 67, soldRatio: 71.6 },
-    { community: 'Stonebridge', active: 13, sold: 16, total: 29, soldRatio: 55.2 }
+    { community: 'Woodfield', active: 18, sold: 48, total: 66, soldRatio: 72.7 },
+    { community: 'Stonebridge', active: 14, sold: 18, total: 32, soldRatio: 56.3 }
   ].filter(item => item.total > 0);
 
   const sortedData = [...data].sort((a, b) => {
@@ -88,11 +88,11 @@ const UpdatedLuxuryCommunitiesChart = () => {
             </div>
             <div className="text-center">
               <p className="text-sm text-gray-300">Market Activity</p>
-              <p className="text-lg font-semibold text-white">14 Active / 27 Sold</p>
+              <p className="text-lg font-semibold text-white">15 Active / 27 Sold</p>
             </div>
             <div className="text-center">
               <p className="text-sm text-gray-300">Sold Ratio</p>
-              <p className="text-lg font-semibold text-yellow-300">65.9%</p>
+              <p className="text-lg font-semibold text-yellow-300">64.3%</p>
             </div>
           </div>
         </div>
